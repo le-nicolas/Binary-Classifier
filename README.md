@@ -11,3 +11,7 @@ Data Collection: Gather historical data on various stove operations, including s
 Feature Engineering: Identify and engineer relevant features that influence the outcome. This may include real-time sensor data, derived metrics (e.g., combustion efficiency), and external factors (e.g., ambient temperature)
 
 Model Training, Evaluation, and Deployment. 
+
+practical applications:
+
+Quality control in industry, deciding whether a specification has been met
