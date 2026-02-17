@@ -1,0 +1,106 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1F2937"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" rx="20" fill="url(#bg)"/>
+
+  <text x="48" y="74" fill="#F8FAFC" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    Binary Classifier Result Snapshot
+  </text>
+  <text x="48" y="108" fill="#94A3B8" font-size="22" font-family="Segoe UI, Arial, sans-serif">
+    Rocket Stove Outcome Classifier | train + predict CLI workflow
+  </text>
+
+  <rect x="48" y="140" width="540" height="492" rx="18" fill="url(#card)" stroke="#334155"/>
+  <text x="76" y="185" fill="#E2E8F0" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="600">
+    Training Summary
+  </text>
+  <text x="76" y="222" fill="#94A3B8" font-size="18" font-family="Consolas, Menlo, monospace">
+    train_rows: 15 | test_rows: 5 | feature_count: 4
+  </text>
+
+  <text x="76" y="280" fill="#CBD5E1" font-size="20" font-family="Segoe UI, Arial, sans-serif">Accuracy</text>
+  <rect x="200" y="263" width="340" height="22" rx="11" fill="#0B1220"/>
+  <rect x="200" y="263" width="340" height="22" rx="11" fill="url(#accent)"/>
+  <text x="552" y="280" fill="#F8FAFC" font-size="18" font-family="Consolas, Menlo, monospace" text-anchor="end">1.00</text>
+
+  <text x="76" y="334" fill="#CBD5E1" font-size="20" font-family="Segoe UI, Arial, sans-serif">Precision</text>
+  <rect x="200" y="317" width="340" height="22" rx="11" fill="#0B1220"/>
+  <rect x="200" y="317" width="340" height="22" rx="11" fill="url(#accent)"/>
+  <text x="552" y="334" fill="#F8FAFC" font-size="18" font-family="Consolas, Menlo, monospace" text-anchor="end">1.00</text>
+
+  <text x="76" y="388" fill="#CBD5E1" font-size="20" font-family="Segoe UI, Arial, sans-serif">Recall</text>
+  <rect x="200" y="371" width="340" height="22" rx="11" fill="#0B1220"/>
+  <rect x="200" y="371" width="340" height="22" rx="11" fill="url(#accent)"/>
+  <text x="552" y="388" fill="#F8FAFC" font-size="18" font-family="Consolas, Menlo, monospace" text-anchor="end">1.00</text>
+
+  <text x="76" y="442" fill="#CBD5E1" font-size="20" font-family="Segoe UI, Arial, sans-serif">F1</text>
+  <rect x="200" y="425" width="340" height="22" rx="11" fill="#0B1220"/>
+  <rect x="200" y="425" width="340" height="22" rx="11" fill="url(#accent)"/>
+  <text x="552" y="442" fill="#F8FAFC" font-size="18" font-family="Consolas, Menlo, monospace" text-anchor="end">1.00</text>
+
+  <rect x="76" y="482" width="484" height="126" rx="12" fill="#0B1220" stroke="#1E293B"/>
+  <text x="96" y="515" fill="#7DD3FC" font-size="17" font-family="Consolas, Menlo, monospace">
+    python -m binary_classifier.cli train ...
+  </text>
+  <text x="96" y="545" fill="#22D3EE" font-size="17" font-family="Consolas, Menlo, monospace">
+    model_path: model.json
+  </text>
+  <text x="96" y="575" fill="#22D3EE" font-size="17" font-family="Consolas, Menlo, monospace">
+    metrics: accuracy=1.0 precision=1.0 recall=1.0 f1=1.0
+  </text>
+
+  <rect x="612" y="140" width="540" height="492" rx="18" fill="url(#card)" stroke="#334155"/>
+  <text x="640" y="185" fill="#E2E8F0" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="600">
+    Prediction Sample
+  </text>
+  <text x="640" y="222" fill="#94A3B8" font-size="18" font-family="Consolas, Menlo, monospace">
+    output: predictions.csv | input_rows: 20
+  </text>
+
+  <rect x="640" y="250" width="484" height="340" rx="12" fill="#0B1220" stroke="#1E293B"/>
+  <text x="660" y="284" fill="#38BDF8" font-size="16" font-family="Consolas, Menlo, monospace">
+    temp  smoke  moisture  airflow  prob      pred
+  </text>
+  <line x1="660" y1="294" x2="1104" y2="294" stroke="#1E293B"/>
+
+  <text x="660" y="328" fill="#E2E8F0" font-size="16" font-family="Consolas, Menlo, monospace">
+    455   38     8         2.4      0.000009  0
+  </text>
+  <text x="660" y="362" fill="#E2E8F0" font-size="16" font-family="Consolas, Menlo, monospace">
+    382   86     18        1.4      0.922957  1
+  </text>
+  <text x="660" y="396" fill="#E2E8F0" font-size="16" font-family="Consolas, Menlo, monospace">
+    338   138    24        1.0      0.999986  1
+  </text>
+  <text x="660" y="430" fill="#E2E8F0" font-size="16" font-family="Consolas, Menlo, monospace">
+    440   41     9         2.3      0.000044  0
+  </text>
+  <text x="660" y="464" fill="#E2E8F0" font-size="16" font-family="Consolas, Menlo, monospace">
+    372   95     20        1.2      0.994044  1
+  </text>
+
+  <rect x="660" y="500" width="444" height="72" rx="10" fill="#062B35" stroke="#155E75"/>
+  <text x="680" y="530" fill="#67E8F9" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="600">
+    Interpretation
+  </text>
+  <text x="680" y="555" fill="#CFFAFE" font-size="16" font-family="Segoe UI, Arial, sans-serif">
+    Higher smoke and moisture with lower airflow trends toward label = 1.
+  </text>
+
+  <text x="48" y="672" fill="#64748B" font-size="16" font-family="Consolas, Menlo, monospace">
+    Generated from the repository's CLI outputs for README preview.
+  </text>
+</svg>

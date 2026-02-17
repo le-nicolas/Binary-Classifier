@@ -7,6 +7,10 @@ It is focused on a rocket stove setting: predicting whether an operating conditi
 is likely to produce a negative outcome (`label = 1`) such as excessive smoke or
 inefficient combustion.
 
+## Result Preview
+
+![Binary Classifier Result Preview](assets/result-preview.svg)
+
 ## What is included
 
 - Logistic regression implementation written from scratch
