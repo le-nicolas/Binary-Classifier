@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binary-classifier"
+version = "0.1.0"
+description = "From-scratch binary logistic regression classifier with CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "le-nicolas"}]
+dependencies = []
+
+[project.scripts]
+binary-classifier = "binary_classifier.cli:main"
